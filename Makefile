@@ -20,8 +20,8 @@ debug debug-test: LD_FLAGS = -pthread
 
 OBJ_DIR = obj
 
-BIN_NAME = shallowblue
-TEST_BIN_NAME = shallowblue
+BIN_NAME = oNNode
+TEST_BIN_NAME = oNNode
 
 all: $(OBJ_DIR) $(BIN_NAME)
 
