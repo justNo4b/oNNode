@@ -1,5 +1,5 @@
 #include "movegen.h"
-#include "eval.h"
+#include "bitutils.h"
 
 MoveGen::MoveGen(const Board &board) {
   setBoard(board);

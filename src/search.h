@@ -4,8 +4,6 @@
 #include "board.h"
 #include "defs.h"
 #include "movegen.h"
-#include "transptable.h"
-#include "orderinginfo.h"
 #include <chrono>
 #include <atomic>
 
@@ -118,12 +116,6 @@ class Search {
   std::vector<ZKey> _positionHistory;
 
   /**
-   * @brief OrderingInfo object containing information about the current state
-   * of this search
-   */
-  OrderingInfo _orderingInfo;
-
-  /**
    * @brief Limits object representing limits imposed on this search.
    * 
    */
@@ -180,11 +172,6 @@ class Search {
    * @brief Number of nodes searched in the last search.
    */
   int _nodes;
-
-  /**
-   * @brief Transposition Table used while searching.
-   */
-  TranspTable _tt;
 
   /**
    * @brief Best move found on last search.
